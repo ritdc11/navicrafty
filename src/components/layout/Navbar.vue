@@ -49,14 +49,17 @@ onUnmounted(() => {
       <!-- Logo -->
       <RouterLink
         to="/"
-        class="flex items-center gap-2 group"
+        class="flex items-center group"
         aria-label="NaviCrafty home"
         @click="closeMenu"
       >
-        <span class="text-2xl" aria-hidden="true">✂️</span>
-        <span class="text-xl font-bold text-gradient group-hover:opacity-90 transition-opacity">
-          NaviCrafty
-        </span>
+        <img
+          src="/navicrafty.png"
+          alt="NaviCrafty logo"
+          class="h-8 md:h-10 lg:h-16 w-auto object-contain group-hover:opacity-90 transition-opacity"
+          width="160"
+          height="48"
+        />
       </RouterLink>
 
       <!-- Desktop Nav Links -->
